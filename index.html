@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ike Destiny — Backend Engineer</title>
+  <meta name="description" content="Ike Destiny — backend engineer (Kotlin, Java, Spring Boot, Kafka). Software Engineering student at ITMO University." />
+  <meta property="og:title" content="Ike Destiny — Backend Engineer" />
+  <meta property="og:description" content="Kotlin · Java · Spring Boot · Kafka · Docker. Building resilient backend systems." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b1020'/><text x='50%' y='58%' text-anchor='middle' font-family='monospace' font-size='30' font-weight='700' fill='%2357f2c4'>ID</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo">ike<span>.</span>destiny</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow mono"><span class="dot"></span> open to backend roles &amp; internships</p>
+      <h1>Ike Holy<br /><span class="grad">Destiny</span></h1>
+      <p class="role mono">Backend Engineer · Kotlin · Java · Spring Boot</p>
+      <p class="lead">I design REST APIs, event-driven microservices on Kafka, and containerized systems that keep running when things go wrong. Currently a Kotlin backend intern at <strong>Tune-It</strong> and a 4th-year Software Engineering student at <strong>ITMO University</strong>, St.&nbsp;Petersburg.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn ghost" href="https://github.com/ikedestiny" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="scroll-hint mono" aria-hidden="true">scroll ↓</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="panel">
+      <h2 class="section-title"><span class="mono">01</span> About</h2>
+      <div class="about-grid">
+        <div class="glass about-text">
+          <p>I'm a backend developer who enjoys the parts of software most people never see: the services, queues, databases and pipelines that make an app feel instant and reliable.</p>
+          <p>My stack is <strong>Kotlin and Java on Spring Boot</strong>, with <strong>Kafka</strong>, <strong>Redis</strong> and <strong>PostgreSQL</strong> underneath and <strong>Docker</strong> around it all. I've shipped APIs for web and iOS clients, built event-driven auth flows, wired LLMs into backends, and debugged production issues straight from Linux logs.</p>
+          <p>Originally from Nigeria, now studying and building in Russia — I work comfortably in English and Russian.</p>
+        </div>
+        <div class="stats">
+          <div class="glass stat"><span class="num">2</span><span class="lbl">backend roles</span></div>
+          <div class="glass stat"><span class="num">85+</span><span class="lbl">public repos</span></div>
+          <div class="glass stat"><span class="num">#1</span><span class="lbl">in Nigeria — Cambridge O'Level Maths, 2020</span></div>
+          <div class="glass stat"><span class="num">'27</span><span class="lbl">ITMO B.Sc., Software Engineering</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="panel">
+      <h2 class="section-title"><span class="mono">02</span> Experience</h2>
+      <ol class="timeline">
+        <li class="glass tilt">
+          <div class="tl-head">
+            <h3>Kotlin Backend Intern <span class="at">@ Tune-It</span></h3>
+            <span class="mono date">Sep 2026 — present</span>
+          </div>
+          <ul>
+            <li>Building the backend of an online-learning (LMS) platform with a Kotlin / Spring Boot team.</li>
+            <li>Taking features from tracker ticket to production: requirements analysis, design, implementation.</li>
+            <li>Writing unit and integration tests that make releases safer.</li>
+            <li>Code reviews and day-to-day teamwork on Git Flow.</li>
+          </ul>
+          <div class="tags"><span>Kotlin</span><span>Spring Boot</span><span>Testing</span><span>Git Flow</span></div>
+        </li>
+        <li class="glass tilt">
+          <div class="tl-head">
+            <h3>Java L2 Support Specialist <span class="at">@ Miral</span></h3>
+            <span class="mono date">Nov 2025 — Mar 2026</span>
+          </div>
+          <ul>
+            <li>Built an internal Java / Spring Boot search tool over customer data that sped up the support team's request handling.</li>
+            <li>Diagnosed backend failures from Linux logs, traced bugs into the code and fixed them with the dev team.</li>
+            <li>Wrote and optimised SQL to verify user-data integrity and close incidents faster.</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>SQL</span><span>Linux</span></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="panel">
+      <h2 class="section-title"><span class="mono">03</span> Projects</h2>
+      <div class="cards">
+        <article class="glass card tilt">
+          <div class="card-top"><span class="mono kicker">microservices</span><span class="glyph">⟁</span></div>
+          <h3>Afrorus Kafka Backend</h3>
+          <p>A fault-tolerant microservice platform on Spring Boot and Apache Kafka: event-driven authentication, Redis-backed sessions and an asynchronous email-notification service, all orchestrated with Docker Compose.</p>
+          <div class="tags"><span>Java</span><span>Kafka</span><span>Redis</span><span>PostgreSQL</span><span>Docker</span></div>
+          <a class="card-link" href="https://github.com/ikedestiny/Afrorus-kafka-backend" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+        <article class="glass card tilt">
+          <div class="card-top"><span class="mono kicker">food delivery</span><span class="glyph">◈</span></div>
+          <h3>Doode</h3>
+          <p>REST API powering a food-delivery platform's web and iOS apps. Designed the PostgreSQL schema, secured it with Spring Security, and set up one-command local environments with Docker Compose — in a team running Git Flow.</p>
+          <div class="tags"><span>Spring Boot</span><span>Spring Security</span><span>JPA</span><span>PostgreSQL</span></div>
+          <a class="card-link" href="https://github.com/ikedestiny/doode" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+        <article class="glass card tilt">
+          <div class="card-top"><span class="mono kicker">ai · llm</span><span class="glyph">✦</span></div>
+          <h3>QuizAi</h3>
+          <p>An asynchronous REST API that generates football quizzes with the DeepSeek LLM, with careful handling of malformed AI responses. Containerised and deployed to Heroku following 12-Factor principles.</p>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>DeepSeek API</span><span>Heroku</span></div>
+          <a class="card-link" href="https://github.com/ikedestiny/QuizAiBackend" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+      </div>
+      <p class="more mono">…and 80+ more experiments, labs and side projects on <a href="https://github.com/ikedestiny?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a></p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="panel">
+      <h2 class="section-title"><span class="mono">04</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-lists">
+          <div class="glass skill-group"><h4 class="mono">languages</h4><p>Kotlin · Java · Python · SQL</p></div>
+          <div class="glass skill-group"><h4 class="mono">backend</h4><p>Spring Boot · Spring Security · Hibernate/JPA · REST · gRPC · Kafka · Redis</p></div>
+          <div class="glass skill-group"><h4 class="mono">data</h4><p>PostgreSQL · MongoDB · Liquibase</p></div>
+          <div class="glass skill-group"><h4 class="mono">infra</h4><p>Docker · Docker Compose · Linux · Git · Maven / Gradle</p></div>
+          <div class="glass skill-group"><h4 class="mono">tools</h4><p>IntelliJ IDEA · PyCharm · Bash · Jupyter</p></div>
+        </div>
+        <div class="sphere-wrap" aria-hidden="true"><div id="tag-sphere"></div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="panel narrow">
+      <h2 class="section-title"><span class="mono">05</span> Education</h2>
+      <div class="glass edu tilt">
+        <div>
+          <h3>ITMO University</h3>
+          <p>B.Sc., Faculty of Software Engineering and Computer Systems · St. Petersburg</p>
+        </div>
+        <span class="mono date">2023 — 2027</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="panel contact">
+      <h2 class="section-title"><span class="mono">06</span> Contact</h2>
+      <p class="big">Have a backend role, an internship or a hard problem?<br /><span class="grad">Let's talk.</span></p>
+      <a class="btn primary big-btn" href="mailto:ikeholy65@gmail.com">ikeholy65@gmail.com</a>
+      <div class="socials">
+        <a href="https://github.com/ikedestiny" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ike-destiny-891725356" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/dest.inydevv" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mono">© <span id="year"></span> Ike Holy Destiny · built with Three.js</footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
